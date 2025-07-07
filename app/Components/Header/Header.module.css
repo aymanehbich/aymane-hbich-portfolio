@@ -1,0 +1,53 @@
+.header {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, border 0.2s ease !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent !important;
+  box-shadow: transparent !important;
+}
+
+.headerScrolled {
+  background-color: var(--mantine-color-gray-0) !important;
+  background-color: var(--mantine-color-white) !important;
+  /* box-shadow: var(--mantine-shadow-xs); */
+  border-bottom: 1px solid var(--mantine-color-gray-4) !important;
+}
+.headerScrolled .link {
+  color: var(--mantine-color-gray-9) !important;
+  &:hover {
+    color: var(--mantine-color-orange-8) !important;
+  }
+}
+
+.linksWrapper {
+  gap: var(--mantine-spacing-xl) !important;
+  padding-block: var(--mantine-spacing-xs);
+  padding-inline: var(--mantine-spacing-lg);
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-xl);
+  box-shadow: var(--mantine-shadow-xs);
+  background-color: var(--mantine-color-body);
+  /* backdrop-filter: blur(20px); */
+  transition: background-color 0.1s ease, box-shadow 0.2s ease, border 0.2s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(calc(1 / 2 * 100%) * -1));
+}
+.scrollModifier {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.link {
+  color: var(--mantine-color-gray-7) !important;
+  font-weight: 500;
+  &:hover {
+    color: var(--mantine-primary-color-filled) !important;
+  }
+}
+.connectButton {
+  &:hover {
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+    background-color: var(--mantine-color-orange-6) !important;
+    color: white !important;
+  }
+}
