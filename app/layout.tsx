@@ -6,16 +6,33 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import { theme } from "../theme";
-
+import MainLayout from "./Layouts/MainLayout/MainLayout";
+import localFont from "next/font/local";
 export const metadata = {
   title: "aymane hbich",
   description:
     "This is my portfolio website, showcasing my projects and skills.",
 };
-
+const myFont = localFont({
+  src: [
+    {
+      path: "./fonts/made_mariage_regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/made_mariage_medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    { path: "./fonts/made_mariage_bold.woff2", weight: "700", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-my",
+});
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="en" className={myFont.variable} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
@@ -25,7 +42,9 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <MainLayout>{children}</MainLayout>
+        </MantineProvider>
       </body>
     </html>
   );
