@@ -1,11 +1,9 @@
 import {
-  alpha,
   AppShell,
   Burger,
   Button,
   Group,
   UnstyledButton,
-  useMantineTheme,
 } from "@mantine/core";
 import Link from "next/link";
 import classes from "./Header.module.css";
@@ -13,7 +11,6 @@ import IconArrowRight from "@tabler/icons-react/dist/esm/icons/IconArrowRight";
 import { AYMANE_LOGO } from "../Logo/Logo";
 import { useWindowScroll } from "@mantine/hooks";
 import clsx from "clsx";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import { AYMANE_LOGO_MOBILE } from "../Logo/LogoMobile";
 
 type HeaderProps = {

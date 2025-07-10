@@ -3,8 +3,6 @@ import {
   Button,
   Container,
   Group,
-  Image,
-  Paper,
   Text,
   Title,
 } from "@mantine/core";

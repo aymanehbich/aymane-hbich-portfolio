@@ -8,7 +8,7 @@ import {
   ThemeIcon,
   Title,
 } from "@mantine/core";
-import { IconBriefcase, IconSchool } from "@tabler/icons-react";
+import { IconBriefcase } from "@tabler/icons-react";
 import React from "react";
 const experiences = [
   {

@@ -3,13 +3,11 @@ import {
   IconBrandInstagram,
   IconBrandTwitter,
   IconBrandYoutube,
-  IconLocation,
   IconMail,
   IconMapPin,
   IconPhone,
 } from "@tabler/icons-react";
 import {
-  ActionIcon,
   Button,
   Card,
   Container,
@@ -25,7 +23,6 @@ import {
   Title,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 const ContactDetails = [
   {
     icon: IconMail,

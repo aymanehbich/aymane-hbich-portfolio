@@ -7,7 +7,6 @@ import EducationSection from "./Components/Sections/EducationSection/EducationSe
 import ProjectsSection from "./Components/Sections/ProjectsSection/ProjectsSection";
 import SkillsSection from "./Components/Sections/SkillsSection/SkillsSection";
 import ContactSection from "./Components/Sections/Contact/ContactSection";
-import ContactSection_v2 from "./Components/Sections/Contact/ContactSection_v2";
 
 export default function HomePage() {
   return (
@@ -18,7 +17,7 @@ export default function HomePage() {
       <EducationSection />
       <ExperiencesSection />
       <ProjectsSection />
-      <ContactSection/>
+      <ContactSection />
       {/* <ContactSection_v2 /> */}
     </Container>
   );

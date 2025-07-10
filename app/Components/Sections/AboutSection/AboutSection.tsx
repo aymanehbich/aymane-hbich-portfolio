@@ -3,10 +3,8 @@ import {
   Divider,
   Grid,
   GridCol,
-  Group,
   Image,
   Paper,
-  SimpleGrid,
   Text,
   Title,
 } from "@mantine/core";

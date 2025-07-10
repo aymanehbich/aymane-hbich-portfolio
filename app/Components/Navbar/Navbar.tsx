@@ -1,4 +1,4 @@
-import { AppShell, Button, Group, UnstyledButton } from "@mantine/core";
+import { AppShell, UnstyledButton } from "@mantine/core";
 import React from "react";
 import classes from "./Navbar.module.css";
 import Link from "next/link";
