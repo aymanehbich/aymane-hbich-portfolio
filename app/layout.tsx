@@ -29,6 +29,7 @@ const myFont = localFont({
   ],
   display: "swap",
   variable: "--font-my",
+  fallback: ["system-ui", "arial"],
 });
 export default function RootLayout({ children }: { children: any }) {
   return (
@@ -36,6 +37,27 @@ export default function RootLayout({ children }: { children: any }) {
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
+        <link
+          rel="preload"
+          href="/fonts/made_mariage_regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/made_mariage_medium.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/made_mariage_bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
