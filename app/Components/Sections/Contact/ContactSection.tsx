@@ -1,8 +1,5 @@
 "use client";
 import {
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconBrandYoutube,
   IconMail,
   IconMapPin,
   IconPhone,
@@ -62,7 +59,7 @@ export default function ContactSection() {
         </Title>
         <Text ta="center" c="gray.7">
           Interested in collaborating or have a question? Feel free to reach
-          out! I'm always open to discussing new projects, creative ideas, or
+          out! I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of your vision.
         </Text>
       </Paper>

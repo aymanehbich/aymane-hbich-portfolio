@@ -22,7 +22,7 @@ export default function HeroSection() {
         mb="md"
       />
       <Text ff="--font-my" fz={22} fw={500} ta="center">
-        Hi! I'm aymane hbich👋
+        Hi! I&apos;m aymane hbich👋
       </Text>
       <Title
         className={classes.HeroTitle}
@@ -47,7 +47,7 @@ export default function HeroSection() {
           size="lg"
           c="gray.9"
         >
-          Let's Connect
+          Let&apos;s Connect
         </Button>
         <Button
           variant="outline"
