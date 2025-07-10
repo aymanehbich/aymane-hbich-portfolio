@@ -1,11 +1,12 @@
-"use client";
 import {
   Badge,
   Button,
   Card,
+  CardSection,
   Container,
   Divider,
   Grid,
+  GridCol,
   Group,
   Image,
   Overlay,
@@ -13,13 +14,7 @@ import {
   Title,
 } from "@mantine/core";
 import React from "react";
-import {
-  IconBookmark,
-  IconBrandGithub,
-  IconExternalLink,
-  IconHeart,
-  IconShare,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import classes from "./Projects.module.css";
 const projects = [
   {
@@ -73,10 +68,10 @@ export default function ProjectsSection() {
       </Text>
       <Grid mt="lg">
         {projects.map((project, index) => (
-          <Grid.Col key={index} span={{ base: 12, sm: 6, lg: 4 }}>
+          <GridCol key={index} span={{ base: 12, sm: 6, lg: 4 }}>
             <Card withBorder radius="md" shadow="xs" padding="md" h="100%">
               {/* Image with overlay */}
-              <Card.Section>
+              <CardSection>
                 <div className={classes.imageWrapper}>
                   <Image
                     src={project.image}
@@ -95,7 +90,7 @@ export default function ProjectsSection() {
                     </Text>
                   </div>
                 </div>
-              </Card.Section>
+              </CardSection>
               <Badge
                 // variant="gradient"
                 variant="filled"
@@ -146,7 +141,7 @@ export default function ProjectsSection() {
                 </Button>
               </Group>
             </Card>
-          </Grid.Col>
+          </GridCol>
         ))}
       </Grid>
     </Container>
