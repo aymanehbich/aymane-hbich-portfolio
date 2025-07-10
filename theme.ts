@@ -3,16 +3,16 @@
 import { createTheme, MantineColorsTuple, Text, Title } from "@mantine/core";
 import classes from "./Title.module.css";
 const myColor: MantineColorsTuple = [
-  "#ffeaec",
-  "#fcd4d7",
-  "#f4a7ac",
-  "#ec777e",
-  "#e64f57",
-  "#e3353f",
-  "#e22732",
-  "#c91a25",
-  "#b41220",
-  "#9e0419",
+  "#ecf4ff",
+  "#dce4f5",
+  "#b9c7e2",
+  "#94a8d0",
+  "#748dc0",
+  "#5f7cb7",
+  "#5474b4",
+  "#44639f",
+  "#3a5890",
+  "#2c4b80",
 ];
 export const theme = createTheme({
   /* Put your mantine theme override here */
