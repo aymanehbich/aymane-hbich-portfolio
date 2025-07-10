@@ -1,7 +1,5 @@
 "use client";
-
-import { createTheme, MantineColorsTuple, Text, Title } from "@mantine/core";
-import classes from "./Title.module.css";
+import { createTheme, MantineColorsTuple, Text } from "@mantine/core";
 const myColor: MantineColorsTuple = [
   "#ecf4ff",
   "#dce4f5",
@@ -20,10 +18,4 @@ export const theme = createTheme({
     myColor,
   },
   primaryColor: "myColor",
-  // fontFamilyMonospace: "var(--font-my)",
-  components: {
-    Text: Text.extend({
-      classNames: classes,
-    }),
-  },
 });
