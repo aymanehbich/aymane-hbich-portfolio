@@ -1,5 +1,4 @@
 import { Container } from "@mantine/core";
-import Header from "./Components/Header/Header";
 import HeroSection from "./Components/Sections/HeroSection/HeroSection";
 import AboutSection from "./Components/Sections/AboutSection/AboutSection";
 import ExperiencesSection from "./Components/Sections/ExperiencesSection/ExperiencesSection";
