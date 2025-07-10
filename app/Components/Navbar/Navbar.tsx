@@ -2,12 +2,8 @@ import { AppShell, Button, Group, UnstyledButton } from "@mantine/core";
 import React from "react";
 import classes from "./Navbar.module.css";
 import Link from "next/link";
-import { IconArrowRight } from "@tabler/icons-react";
-import { useWindowScroll } from "@mantine/hooks";
-import clsx from "clsx";
 
 export default function Navbar() {
-  const [scroll] = useWindowScroll();
   return (
     <AppShell.Navbar py="md" px={4}>
       <UnstyledButton component={Link} href="/#about" className={classes.link}>
