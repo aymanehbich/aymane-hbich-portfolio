@@ -14,6 +14,7 @@ import { AYMANE_LOGO } from "../Logo/Logo";
 import { useWindowScroll } from "@mantine/hooks";
 import clsx from "clsx";
 import { MantineLogo } from "@mantinex/mantine-logo";
+import { AYMANE_LOGO_MOBILE } from "../Logo/LogoMobile";
 
 type HeaderProps = {
   opened: boolean;
@@ -35,8 +36,11 @@ export default function Header({ opened, toggle }: HeaderProps) {
           {/* <UnstyledButton display="flex" component={Link} href="/">
             <MantineLogo size={30} />
           </UnstyledButton> */}
-          <UnstyledButton display="flex" component={Link} href="/">
+          <UnstyledButton display="flex" component={Link} href="/" visibleFrom="sm">
             <AYMANE_LOGO size={25} />
+          </UnstyledButton>
+          <UnstyledButton hiddenFrom="sm" display="flex" component={Link} href="/">
+            <AYMANE_LOGO_MOBILE size={30} />
           </UnstyledButton>
           <Group
             visibleFrom="md"

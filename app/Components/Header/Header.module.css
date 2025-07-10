@@ -14,7 +14,7 @@
 .headerScrolled .link {
   color: var(--mantine-color-gray-9) !important;
   &:hover {
-    color: var(--mantine-color-orange-8) !important;
+    color: var(--mantine-primary-color-filled-hover) !important;
   }
 }
 
@@ -41,7 +41,7 @@
   color: var(--mantine-color-gray-7) !important;
   font-weight: 500;
   &:hover {
-    color: var(--mantine-primary-color-filled) !important;
+    color: var(--mantine-primary-color-filled-hover) !important;
   }
 }
 .connectButton {
