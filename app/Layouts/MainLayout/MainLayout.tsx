@@ -1,5 +1,5 @@
 "use client";
-import { AppShell, Burger, Button, Group, UnstyledButton } from "@mantine/core";
+import { AppShell } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";

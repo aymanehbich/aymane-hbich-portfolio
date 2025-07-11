@@ -1,35 +1,35 @@
 // import "@mantine/core/styles.css";
 // Global styles (required for all Mantine components)
-import '@mantine/core/styles/baseline.css';
-import '@mantine/core/styles/default-css-variables.css';
-import '@mantine/core/styles/global.css';
+import "@mantine/core/styles/baseline.css";
+import "@mantine/core/styles/default-css-variables.css";
+import "@mantine/core/styles/global.css";
 // Component-specific styles
-import '@mantine/core/styles/UnstyledButton.css';
-import '@mantine/core/styles/Paper.css';
-import '@mantine/core/styles/CloseButton.css';
-import '@mantine/core/styles/Overlay.css';
-import '@mantine/core/styles/Input.css';
+import "@mantine/core/styles/UnstyledButton.css";
+import "@mantine/core/styles/Paper.css";
+import "@mantine/core/styles/CloseButton.css";
+import "@mantine/core/styles/Overlay.css";
+import "@mantine/core/styles/Input.css";
 // import '@mantine/core/styles/Flex.css';
-import '@mantine/core/styles/ActionIcon.css';
-import '@mantine/core/styles/Avatar.css';
-import '@mantine/core/styles/Button.css';
-import '@mantine/core/styles/Container.css';
-import '@mantine/core/styles/Group.css';
-import '@mantine/core/styles/Text.css';
-import '@mantine/core/styles/Title.css';
-import '@mantine/core/styles/AppShell.css';
-import '@mantine/core/styles/Burger.css';
-import '@mantine/core/styles/Stack.css';
-import '@mantine/core/styles/Divider.css';
-import '@mantine/core/styles/Card.css';
-import '@mantine/core/styles/Badge.css';
-import '@mantine/core/styles/Anchor.css';
-import '@mantine/core/styles/Grid.css';
-import '@mantine/core/styles/SimpleGrid.css';
-import '@mantine/core/styles/Center.css';
-import '@mantine/core/styles/Image.css';
-import '@mantine/core/styles/ThemeIcon.css';
-import '@mantine/core/styles/Progress.css';
+import "@mantine/core/styles/ActionIcon.css";
+import "@mantine/core/styles/Avatar.css";
+import "@mantine/core/styles/Button.css";
+import "@mantine/core/styles/Container.css";
+import "@mantine/core/styles/Group.css";
+import "@mantine/core/styles/Text.css";
+import "@mantine/core/styles/Title.css";
+import "@mantine/core/styles/AppShell.css";
+import "@mantine/core/styles/Burger.css";
+import "@mantine/core/styles/Stack.css";
+import "@mantine/core/styles/Divider.css";
+import "@mantine/core/styles/Card.css";
+import "@mantine/core/styles/Badge.css";
+import "@mantine/core/styles/Anchor.css";
+import "@mantine/core/styles/Grid.css";
+import "@mantine/core/styles/SimpleGrid.css";
+import "@mantine/core/styles/Center.css";
+import "@mantine/core/styles/Image.css";
+import "@mantine/core/styles/ThemeIcon.css";
+import "@mantine/core/styles/Progress.css";
 import React from "react";
 import {
   MantineProvider,
@@ -40,9 +40,38 @@ import { theme } from "../theme";
 import MainLayout from "./Layouts/MainLayout/MainLayout";
 import localFont from "next/font/local";
 export const metadata = {
-  title: "aymane hbich",
+  title: {
+    default: "Hi, I'm Aymane Hbich | Full Stack Developer",
+    template: "%s | Aymane Hbich",
+  },
   description:
-    "This is my portfolio website, showcasing my projects and skills.",
+    "I am a Full Stack Developer with expertise in React and Next.js, passionate about building efficient and scalable web applications.",
+  metadataBase: new URL("https://aymanehbich.me/"),
+  openGraph: {
+    title: "Aymane Hbich Portfolio",
+    description: "Showcasing my work in React, Next.js",
+    url: "https://aymanehbich.me",
+    siteName: "Aymane Hbich",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aymane Hbich Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  linkedIn: {
+    title: "Aymane Hbich | Full Stack Developer",
+    description:
+      "Explore my portfolio showcasing projects in React, Next.js, and more.",
+    url: "https://www.linkedin.com/in/aymane-hbich-6a4276307",
+  },
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 const myFont = localFont({
   src: [
@@ -67,28 +96,7 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en" className={myFont.variable} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <link
-          rel="preload"
-          href="/fonts/made_mariage_regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/made_mariage_medium.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/made_mariage_bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        <link rel="shortcut icon" href="/favicon.png" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
