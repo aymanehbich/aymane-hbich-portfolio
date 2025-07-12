@@ -57,10 +57,10 @@ export default function EducationSection() {
   return (
     <Container id="education" fluid pb="xl" px={0} pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={1} ff="--font-my">
+        <Title ta="center" order={2} fw={800} size="h1">
           Education
         </Title>
-        <Text ta="center" c="gray.7">
+        <Text ta="center" c="gray.7" size="lg">
           Academic path that shaped my mindset, skills, and technical approach.
         </Text>
       </Paper>

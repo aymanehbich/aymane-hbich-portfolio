@@ -14,13 +14,15 @@ import { skillsData, skillsStats } from "../../../constants";
 export default function SkillsSection() {
   return (
     <Container id="skills" fluid pb="xl" px={0} pt={80}>
-      <Title ta="center" order={1} ff="--font-my">
-        Skills & Expertise
-      </Title>
-      <Text ta="center" c="gray.7">
-        A wide set of technical and soft skills acquired through academic
-        training, internships, and self-learning.
-      </Text>
+      <Paper maw={700} mx="auto" mb="xl">
+        <Title ta="center" order={2} fw={800} size="h1">
+          Skills & Expertise
+        </Title>
+        <Text ta="center" c="gray.9" size="lg">
+          A wide set of technical and soft skills acquired through academic
+          training, internships, and self-learning.
+        </Text>
+      </Paper>
       <Grid mt="xl">
         {skillsData.map((section, index) => (
           <GridCol key={index} span={{ base: 12, md: 6, lg: 4 }}>

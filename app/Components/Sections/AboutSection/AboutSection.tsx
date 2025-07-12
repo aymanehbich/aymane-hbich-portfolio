@@ -14,16 +14,16 @@ export default function AboutSection() {
   return (
     <Container id="about" fluid pb="xl" pt={80} px={0}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={1} ff="--font-my">
+        <Title ta="center" order={2} fw={800} size="h1">
           About me
         </Title>
-        <Text ta="center" c="gray.7">
+        <Text ta="center" c="gray.7" size="lg">
           A brief look into my journey as a developer and tech enthusiast.
         </Text>
       </Paper>
       <Grid mt="xl" align="flex-start" justify="space-between">
         <GridCol span={{ base: 12, md: 6, lg: 6 }}>
-          <Text size="lg" c="gray.9" >
+          <Text size="lg" c="gray.9">
             I am a full stack developer from Morocco with experience in building
             modern web applications using JavaScript, React, Node.js and other
             cutting-edge technologies. I have a passion for creating efficient,
@@ -41,7 +41,7 @@ export default function AboutSection() {
             collaborations.
           </Text>
           <Divider my="xs" variant="dotted" c="gray.4" size="sm" />
-          <Text size="lg" c="gray.9" >
+          <Text size="lg" c="gray.9">
             I am always looking for new challenges and opportunities to grow as
             a developer and contribute to the tech community through open-source
             projects and collaborations.

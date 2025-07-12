@@ -1,3 +1,5 @@
 .HeroTitle {
   color: var(--mantine-primary-color-9) !important;
+  font-family: var(--font-my) !important;
+  font-weight: 800;
 }

@@ -1,9 +1,5 @@
 "use client";
-import {
-  IconMail,
-  IconMapPin,
-  IconPhone,
-} from "@tabler/icons-react";
+import { IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
 import {
   Button,
   Card,
@@ -54,13 +50,13 @@ export default function ContactSection() {
   return (
     <Container id="contact" fluid pb="xl" px={0} pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={1} ff="--font-my">
+        <Title ta="center" order={2} fw={800} size="h1">
           Contact Me
         </Title>
-        <Text ta="center" c="gray.7">
+        <Text ta="center" c="gray.7" size="lg">
           Interested in collaborating or have a question? Feel free to reach
-          out! I&apos;m always open to discussing new projects, creative ideas, or
-          opportunities to be part of your vision.
+          out! I&apos;m always open to discussing new projects, creative ideas,
+          or opportunities to be part of your vision.
         </Text>
       </Paper>
 

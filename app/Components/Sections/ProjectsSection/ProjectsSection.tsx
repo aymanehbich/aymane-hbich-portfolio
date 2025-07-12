@@ -10,6 +10,7 @@ import {
   Group,
   Image,
   Overlay,
+  Paper,
   Text,
   Title,
 } from "@mantine/core";
@@ -59,13 +60,15 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <Container id="projects" fluid pb="xl" pt={80}>
-      <Title ta="center" order={1} ff="--font-my">
-        Projects
-      </Title>
-      <Text ta="center" c="gray.7">
-        Here are all of my projects that I have worked on, showcasing my skills
-        and expertise in web development.
-      </Text>
+      <Paper maw={700} mx="auto" mb="xl">
+        <Title ta="center" order={2} fw={800} size="h1">
+          Projects
+        </Title>
+        <Text ta="center" c="gray.7" size="lg">
+          Here are all of my projects that I have worked on, showcasing my
+          skills and expertise in web development.
+        </Text>
+      </Paper>
       <Grid mt="lg">
         {projects.map((project, index) => (
           <GridCol key={index} span={{ base: 12, sm: 6, lg: 4 }}>

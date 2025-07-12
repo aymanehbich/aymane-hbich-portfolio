@@ -1,18 +1,10 @@
-import {
-  Avatar,
-  Button,
-  Container,
-  Group,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Avatar, Button, Container, Group, Text, Title } from "@mantine/core";
 import React from "react";
 import { IconArrowUpRight, IconDownload } from "@tabler/icons-react";
 import classes from "./Hero.module.css";
 export default function HeroSection() {
   return (
-    <Container id="hero" size="lg" pb="xl" maw={900} px={0} pt={80}>
-      {/* <Paper mx="auto"> */}
+    <Container id="hero" size="lg" pb="xl" maw={900} px={0} pt={40}>
       <Avatar
         src="/HBICH_AYMANE.png"
         radius={150}
@@ -24,13 +16,7 @@ export default function HeroSection() {
       <Text ff="--font-my" fz={22} fw={500} ta="center">
         Hi! I&apos;m aymane hbich👋
       </Text>
-      <Title
-        className={classes.HeroTitle}
-        size={55}
-        ta="center"
-        ff="--font-my"
-        fw={700}
-      >
+      <Title className={classes.HeroTitle} size={55} ta="center">
         Full Stack Developer Based in Morocco
       </Title>
       <Text size="xl" c="gray.7" ta="center">
@@ -38,7 +24,6 @@ export default function HeroSection() {
         modern web applications using JavaScript, React, Node.js and other
         cutting-edge technologies.
       </Text>
-      {/* </Paper> */}
       <Group mt="lg" justify="center" gap="xl">
         <Button
           variant="default"
