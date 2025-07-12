@@ -71,10 +71,14 @@ export const metadata = {
   },
 
   icons: {
-    // icon: "/favicon.png",
-    icon: [{ rel: "icon", url: "/main-icon.png", type: "image/png" }],
+    icon: [
+      // { rel: "icon", url: "/main-icon.png" },
+      {
+        rel: "apple-touch-icon",
+        href: "/main-icon.png",
+      },
+    ],
     shortcut: "/main-icon.png",
-    apple: [{ rel: "apple-touch-icon", url: "/apple-touch-icon.png" }],
   },
 };
 const myFont = localFont({
