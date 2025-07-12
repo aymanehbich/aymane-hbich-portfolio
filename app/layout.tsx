@@ -69,17 +69,6 @@ export const metadata = {
       "Explore my portfolio showcasing projects in React, Next.js, and more.",
     url: "https://www.linkedin.com/in/aymane-hbich-6a4276307",
   },
-
-  icons: {
-    icon: [
-      // { rel: "icon", url: "/main-icon.png" },
-      {
-        rel: "apple-touch-icon",
-        href: "/main-icon.png",
-      },
-    ],
-    shortcut: "/main-icon.png",
-  },
 };
 const myFont = localFont({
   src: [
