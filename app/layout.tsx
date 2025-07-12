@@ -30,6 +30,7 @@ import "@mantine/core/styles/Center.css";
 import "@mantine/core/styles/Image.css";
 import "@mantine/core/styles/ThemeIcon.css";
 import "@mantine/core/styles/Progress.css";
+import "@mantine/core/styles/Code.css";
 import React from "react";
 import {
   MantineProvider,
