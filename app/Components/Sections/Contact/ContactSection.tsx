@@ -16,6 +16,7 @@ import {
   Title,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { sendEmail } from "../../../utils/sendEmail";
 const ContactDetails = [
   {
     icon: IconMail,
@@ -47,6 +48,14 @@ export default function ContactSection() {
       subject: (value) => value.trim().length === 0,
     },
   });
+  const handleSubmit = (values: {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+  }) => {
+    sendEmail(values);
+  };
   return (
     <Container id="contact" fluid pb="xl" px={0} pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
@@ -79,7 +88,7 @@ export default function ContactSection() {
       <Text ta="center" c="gray.7" mt="xl">
         Or fill out the form below to send me a message directly.
       </Text>
-      <form onSubmit={form.onSubmit(() => {})}>
+      <form onSubmit={form.onSubmit(handleSubmit)}>
         <SimpleGrid cols={{ base: 1, sm: 2 }} mt="lg">
           <TextInput
             label="Name"
