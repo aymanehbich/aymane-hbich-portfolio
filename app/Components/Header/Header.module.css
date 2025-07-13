@@ -44,10 +44,3 @@
     color: var(--mantine-primary-color-filled-hover) !important;
   }
 }
-.connectButton {
-  &:hover {
-    transition: background-color 0.3s ease, color 0.3s ease !important;
-    background-color: var(--mantine-color-orange-6) !important;
-    color: white !important;
-  }
-}

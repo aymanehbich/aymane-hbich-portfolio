@@ -19,7 +19,7 @@ type HeaderProps = {
 };
 export default function Header({ opened, toggle }: HeaderProps) {
   const [scroll] = useWindowScroll();
-  const scrollYMax = 20; // Define the scroll threshold for header style change
+  const scrollYMax = 10; // Define the scroll threshold for header style change
   return (
     <AppShell.Header
       className={clsx(
@@ -86,12 +86,9 @@ export default function Header({ opened, toggle }: HeaderProps) {
             component={Link}
             href="#contact"
             variant="outline"
-            // gradient={{ from: "myColor", to: "red" }}
             radius="xl"
-            // color="myColor"
             size="md"
             rightSection={<IconArrowRight size={16} />}
-            // className={classes.connectButton}
           >
             Connect
           </Button>
