@@ -21,7 +21,7 @@ const ContactDetails = [
   {
     icon: IconMail,
     color: "myColor",
-    text: "aymanehbich@gmail.com",
+    text: "contact@aymanehbich.me",
   },
   {
     icon: IconMapPin,
@@ -31,7 +31,7 @@ const ContactDetails = [
   {
     icon: IconPhone,
     color: "myColor",
-    text: "+212 6 12 34 56 78",
+    text: "+212 6 19 01 62 27",
   },
 ];
 export default function ContactSection() {

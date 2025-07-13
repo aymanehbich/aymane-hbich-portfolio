@@ -20,11 +20,30 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions: nodemailer.SendMailOptions = {
-    from: `"${name}" <${process.env.MY_EMAIL!}>`,
-    to: process.env.MY_EMAIL!,
+    from: `"${name}" <contact@aymanehbich.me>`,
+    // to: process.env.MY_EMAIL!,
+    to: "contact@aymanehbich.me",
     subject: `Portfolio Contact Form: ${subject}`,
     text: message,
     replyTo: email,
+    html: `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <div style="background-color: #2c4b80; padding: 20px; color: white;">
+      <h2 style="margin: 0; font-size: 20px;">📬 New Contact Message</h2>
+    </div>
+    <div style="padding: 20px; background-color: #f9f9f9; color: #333;">
+      <p><strong style="color: #2c4b80;">Name:</strong> ${name}</p>
+      <p><strong style="color: #2c4b80;">Email:</strong> ${email}</p>
+      <p><strong style="color: #2c4b80;">Subject:</strong> ${subject}</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+      <p style="margin-bottom: 5px;"><strong style="color: #2c4b80;">Message:</strong></p>
+      <p style="white-space: pre-line; line-height: 1.5;">${message}</p>
+    </div>
+    <div style="background-color: #f1f1f1; padding: 10px 20px; font-size: 12px; color: #888; text-align: center;">
+      This message was sent from your portfolio contact form.
+    </div>
+  </div>
+`,
   };
 
   const sendMailPromise = () =>
