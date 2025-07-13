@@ -19,7 +19,7 @@ const certificates = [
     issuer: "freeCodeCamp",
     issued: "October 2024",
     credentialId: "aymane_hbich-jaads",
-    link: "https://www.freecodecamp.org/certification/aymane_hbich/javascript-algorithms-and-data-structures",
+    link: "https://freecodecamp.org/certification/aymane_hbich/javascript-algorithms-and-data-structures-v8",
     skills: ["JavaScript", "Problem Solving"],
     logo: "/logos/freecodecamp.jpeg",
     pdf: "/certificates/javascript-certificate.pdf",
@@ -29,7 +29,7 @@ const certificates = [
     issuer: "freeCodeCamp",
     issued: "September 2024",
     credentialId: "aymane_hbich-rwd",
-    link: "https://www.freecodecamp.org/certification/aymane_hbich/responsive-web-design",
+    link: "https://freecodecamp.org/certification/aymane_hbich/responsive-web-design",
     skills: [
       "Bootstrap (Framework)",
       "Responsive Web Design",
@@ -88,43 +88,43 @@ export default function CertificatesSection() {
                 Certification
               </Text>
 
-              <Text className={classes.title} mt="xs" mb="sm" fw={600}>
+              <Text className={classes.title} mt="xs" mb="md" fw={600}>
                 {cert.title}
               </Text>
-              <Text size="sm" c="gray.7" mb="xs">
+              <Text size="sm" c="gray.7">
                 Issued by {cert.issuer} · <strong>{cert.issued}</strong>
               </Text>
-              <Text size="sm" c="gray.7" mb="xs">
+              <Text size="sm" c="gray.7">
                 Credential ID:{" "}
                 <Code color="myColor" c="white">
                   {cert.credentialId}
                 </Code>
               </Text>
-              <Text size="sm" c="gray.7" mb="sm">
+              <Text size="sm" c="gray.7">
                 Skills: {cert.skills.join(" · ")}
               </Text>
               <div style={{ flexGrow: 1 }}></div>
               <Group wrap="nowrap" justify="space-between" mt="sm">
                 <Group gap="xs" wrap="nowrap">
                   <Avatar size={24} src={cert.logo} alt={cert.issuer} />
-                  <Text size="xs">{cert.issuer}</Text>
+                  <Text size="sm">{cert.issuer}</Text>
                 </Group>
                 <Group gap="xs">
                   <Anchor
                     href={cert.link}
                     target="_blank"
-                    size="xs"
+                    size="sm"
                     fw={500}
-                    underline="always"
+                    // underline="always"
                   >
                     Show credential
                   </Anchor>
                   <Anchor
                     href={cert.pdf}
                     target="_blank"
-                    size="xs"
+                    size="sm"
                     fw={500}
-                    underline="always"
+                    // underline="always"
                   >
                     View PDF
                   </Anchor>
