@@ -19,17 +19,17 @@ import { useForm } from "@mantine/form";
 const ContactDetails = [
   {
     icon: IconMail,
-    color: "purple",
+    color: "myColor",
     text: "aymanehbich@gmail.com",
   },
   {
     icon: IconMapPin,
-    color: "red",
+    color: "myColor",
     text: "Morocco, Guercif",
   },
   {
     icon: IconPhone,
-    color: "yellow",
+    color: "myColor",
     text: "+212 6 12 34 56 78",
   },
 ];
