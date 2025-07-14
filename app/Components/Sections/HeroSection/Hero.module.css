@@ -17,4 +17,6 @@
   @media (max-width: $mantine-breakpoint-sm) {
     font-size: 18px;
   }
+  font-family: var(--font-my) !important;
+  font-weight: 500;
 }

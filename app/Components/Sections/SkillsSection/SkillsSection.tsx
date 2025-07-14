@@ -26,16 +26,16 @@ export default function SkillsSection() {
       <Grid mt="xl">
         {skillsData.map((section, index) => (
           <GridCol key={index} span={{ base: 12, md: 6, lg: 4 }}>
-            <Title fw={500} order={2}>
+            <Title fw={700} order={2}>
               {section.category}
             </Title>
             {section.skills.map((skill, idx) => (
               <Paper mt="xs" py="sm" key={idx}>
                 <Group mb={5} justify="space-between">
-                  <Text c="gray.7" size="lg">
+                  <Text c="gray.7" size="md">
                     {skill.name}
                   </Text>
-                  <Text c="gray.7" size="lg">
+                  <Text c="gray.7" size="md">
                     {skill.level}%
                   </Text>
                 </Group>
@@ -49,7 +49,7 @@ export default function SkillsSection() {
         {skillsStats.map((item, index) => (
           <GridCol key={index} span={{ base: 12, md: 4, lg: 3 }}>
             <Paper withBorder shadow="sm" p="lg" ta="center" radius="md">
-              <Text fw={700} fz={40}>
+              <Text ff="var(--font-my)" fw={700} fz="h1">
                 {item.value}
               </Text>
               <Text c="gray.7" fz={20}>

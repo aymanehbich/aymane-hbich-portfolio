@@ -23,7 +23,7 @@ export default function AboutSection() {
       </Paper>
       <Grid mt="xl" align="flex-start" justify="space-between">
         <GridCol span={{ base: 12, md: 6, lg: 6 }}>
-          <Text size="lg" c="gray.9">
+          <Text size="lg" c="gray.9" fw={500}>
             I am a full stack developer from Morocco with experience in building
             modern web applications using JavaScript, React, Node.js and other
             cutting-edge technologies. I have a passion for creating efficient,
@@ -31,7 +31,7 @@ export default function AboutSection() {
             problems.
           </Text>
           <Divider my="xs" variant="dotted" c="gray.4" size="sm" />
-          <Text size="lg" c="gray.9">
+          <Text size="lg" c="gray.9" fw={500}>
             Also I am a tech enthusiast who loves to explore new technologies
             and frameworks. I enjoy learning about the latest trends in web
             development and applying them to my projects to create innovative
@@ -41,7 +41,7 @@ export default function AboutSection() {
             collaborations.
           </Text>
           <Divider my="xs" variant="dotted" c="gray.4" size="sm" />
-          <Text size="lg" c="gray.9">
+          <Text size="lg" c="gray.9" fw={500}>
             I am always looking for new challenges and opportunities to grow as
             a developer and contribute to the tech community through open-source
             projects and collaborations.

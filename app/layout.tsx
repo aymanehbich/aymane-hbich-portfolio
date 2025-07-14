@@ -41,6 +41,7 @@ import {
 import { theme } from "../theme";
 import MainLayout from "./Layouts/MainLayout/MainLayout";
 import localFont from "next/font/local";
+import { Public_Sans } from "next/font/google";
 export const metadata = {
   title: {
     default: "Hi, I'm Aymane Hbich | Full Stack Developer",
@@ -90,9 +91,19 @@ const myFont = localFont({
   variable: "--font-my",
   fallback: ["system-ui", "arial"],
 });
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Use what you need
+  variable: "--font-sans",
+  display: "swap",
+});
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en" className={myFont.variable} {...mantineHtmlProps}>
+    <html
+      lang="en"
+      className={`${myFont.variable} ${publicSans.variable}`}
+      {...mantineHtmlProps}
+    >
       <head>
         <ColorSchemeScript />
         <meta
