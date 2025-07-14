@@ -61,10 +61,10 @@ export default function ProjectsSection() {
   return (
     <Container id="projects" fluid pb="xl" pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={2} fw={800} size="h1">
+        <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Projects
         </Title>
-        <Text ta="center" c="gray.7" size="lg">
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
           Here are all of my projects that I have worked on, showcasing my
           skills and expertise in web development.
         </Text>

@@ -14,10 +14,10 @@ export default function AboutSection() {
   return (
     <Container id="about" fluid pb="xl" pt={80} px={0}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={2} fw={800} size="h1">
+        <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           About me
         </Title>
-        <Text ta="center" c="gray.7" size="lg">
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
           A brief look into my journey as a developer and tech enthusiast.
         </Text>
       </Paper>

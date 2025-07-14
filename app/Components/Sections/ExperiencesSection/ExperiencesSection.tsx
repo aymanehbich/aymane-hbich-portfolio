@@ -24,10 +24,10 @@ export default function ExperiencesSection() {
   return (
     <Container id="experience" fluid pb="xl" px={0} pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
-        <Title ta="center" order={2} fw={800} size="h1">
+        <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Experiences
         </Title>
-        <Text ta="center" c="gray.7" size="lg">
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
           A snapshot of my recent hands-on development experience and technical
           contributions.
         </Text>
