@@ -8,17 +8,21 @@
 }
 
 .HeroText {
+  font-family: var(--font-my) !important;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px !important;
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 .HeroDescription {
   font-family: var(--font-my) !important;
   font-weight: 500 !important;
-  font-size: var(--mantine-font-size-xl) !important;
+  font-size: var(--mantine-font-size-lg) !important;
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 18px !important;
+    font-size: 14px !important;
     /* font-weight: 400 !important; */
   }
 }

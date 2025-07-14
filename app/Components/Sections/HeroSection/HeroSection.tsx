@@ -29,13 +29,10 @@ export default function HeroSection() {
           alt="Aymane Hbich"
           width={150}
           height={150}
-          priority={false}
-          loading="lazy"
+          priority={true}
         />
       </Paper>
-      <Text ff="var(--font-my)" fz={22} fw={500} ta="center">
-        Hi! I&apos;m aymane hbich👋
-      </Text>
+      <Text className={classes.HeroText}>Hi! I&apos;m aymane hbich👋</Text>
       <Title className={classes.HeroTitle} size={55} ta="center">
         Full Stack Developer Based in Morocco
       </Title>
