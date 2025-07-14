@@ -3,13 +3,14 @@ import {
   Divider,
   Grid,
   GridCol,
-  Image,
   Paper,
   Text,
   Title,
 } from "@mantine/core";
 import React from "react";
-
+import ProfilePic from "../../../../public/HBICH_AYMANE.png";
+import Image from "next/image";
+import classes from "./AboutSection.module.css";
 export default function AboutSection() {
   return (
     <Container id="about" fluid pb="xl" pt={80} px={0}>
@@ -49,11 +50,12 @@ export default function AboutSection() {
         </GridCol>
         <GridCol span={{ base: 12, md: 6, lg: 6 }}>
           <Image
-            src="/HBICH_AYMANE.png"
-            maw={500}
-            mx="auto"
-            bd="2px dashed gray.4"
-            radius="md"
+            src={ProfilePic}
+            width={500}
+            height={500}
+            style={{ objectFit: "cover" }}
+            quality={100}
+            className={classes.image}
             alt="Aymane HBICH"
           />
         </GridCol>
