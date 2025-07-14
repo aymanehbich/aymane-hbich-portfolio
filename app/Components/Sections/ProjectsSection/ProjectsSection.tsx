@@ -8,7 +8,6 @@ import {
   Grid,
   GridCol,
   Group,
-  Image,
   Overlay,
   Paper,
   Text,
@@ -17,6 +16,7 @@ import {
 import React from "react";
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import classes from "./Projects.module.css";
+import Image from "next/image";
 const projects = [
   {
     title: "Todo Application",
@@ -78,10 +78,11 @@ export default function ProjectsSection() {
                 <div className={classes.imageWrapper}>
                   <Image
                     src={project.image}
+                    width={400}
+                    height={200}
                     alt={`${project.title} preview`}
-                    // height={200}
-                    mah={200}
-                    fit="cover"
+                    quality={64}
+                    className={classes.projectImage}
                   />
                   <Overlay className={classes.hoverOverlay} zIndex={1} />
                   <div className={classes.overlayContent}>
