@@ -11,7 +11,7 @@ import React from "react";
 import { IconArrowUpRight, IconDownload } from "@tabler/icons-react";
 import classes from "./Hero.module.css";
 import Image from "next/image";
-import ProfilePic from "../../../../public/HBICH_AYMANE.png";
+import ProfilePic from "../../../../public/HBICH_AYMANE.webp";
 export default function HeroSection() {
   return (
     <Container id="hero" size="lg" pb="xl" maw={900} px={0} pt={40}>
@@ -40,7 +40,7 @@ export default function HeroSection() {
         Full Stack Developer Based in Morocco
       </Title>
       <Text
-        size="xl"
+        // size="xl"
         c="gray.7"
         ta="center"
         className={classes.HeroDescription}
