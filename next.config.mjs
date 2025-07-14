@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compress: false,
   reactStrictMode: true,
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
