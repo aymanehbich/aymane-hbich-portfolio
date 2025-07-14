@@ -17,6 +17,7 @@ import {
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { sendEmail } from "../../../utils/sendEmail";
+import { useState } from "react";
 const ContactDetails = [
   {
     icon: IconMail,
@@ -35,6 +36,7 @@ const ContactDetails = [
   },
 ];
 export default function ContactSection() {
+  const [loading, setLoading] = useState(false);
   const form = useForm({
     initialValues: {
       name: "",
@@ -48,14 +50,24 @@ export default function ContactSection() {
       subject: (value) => value.trim().length === 0,
     },
   });
-  const handleSubmit = (values: {
+  const handleSubmit = async (values: {
     name: string;
     email: string;
     subject: string;
     message: string;
   }) => {
-    sendEmail(values);
+    setLoading(true);
+    const res = await sendEmail(values);
+    if (res.success) {
+      form.reset();
+    } else {
+      // You can add a toast or alert here to notify the user
+      console.error("Failed to send message:", res.error);
+    }
+
+    setLoading(false);
   };
+
   return (
     <Container id="contact" fluid pb="xl" px={0} pt={80}>
       <Paper maw={700} mx="auto" mb="xl">
@@ -127,7 +139,7 @@ export default function ContactSection() {
         />
 
         <Group justify="center" mt="xl">
-          <Button type="submit" size="md">
+          <Button type="submit" size="md" loading={loading}>
             Send message
           </Button>
         </Group>
