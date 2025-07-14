@@ -27,8 +27,9 @@ export default function HeroSection() {
         <Image
           src={ProfilePic}
           alt="Aymane Hbich"
-          width={146}
-          height={146}
+          width={150}
+          height={150}
+          priority={false}
           loading="lazy"
         />
       </Paper>
@@ -38,7 +39,12 @@ export default function HeroSection() {
       <Title className={classes.HeroTitle} size={55} ta="center">
         Full Stack Developer Based in Morocco
       </Title>
-      <Text size="xl" c="gray.7" ta="center"  className={classes.HeroDescription}>
+      <Text
+        size="xl"
+        c="gray.7"
+        ta="center"
+        className={classes.HeroDescription}
+      >
         I am a full stack developer from Morocco with experience in building
         modern web applications using JavaScript, React, Node.js and other
         cutting-edge technologies.
