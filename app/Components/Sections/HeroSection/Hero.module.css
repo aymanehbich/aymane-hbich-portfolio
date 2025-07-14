@@ -2,4 +2,19 @@
   color: var(--mantine-primary-color-9) !important;
   font-family: var(--font-my) !important;
   font-weight: 800;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 40px;
+  }
+}
+
+.HeroText {
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 18px;
+  }
+}
+
+.HeroDescription {
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 18px;
+  }
 }

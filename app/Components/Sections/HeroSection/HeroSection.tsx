@@ -32,13 +32,13 @@ export default function HeroSection() {
           loading="lazy"
         />
       </Paper>
-      <Text ff="--font-my" fz={22} fw={500} ta="center">
+      <Text ff="var(--font-my)" fz={22} fw={500} ta="center">
         Hi! I&apos;m aymane hbich👋
       </Text>
       <Title className={classes.HeroTitle} size={55} ta="center">
         Full Stack Developer Based in Morocco
       </Title>
-      <Text size="xl" c="gray.7" ta="center">
+      <Text size="xl" c="gray.7" ta="center"  className={classes.HeroDescription}>
         I am a full stack developer from Morocco with experience in building
         modern web applications using JavaScript, React, Node.js and other
         cutting-edge technologies.
