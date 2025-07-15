@@ -106,7 +106,12 @@ export default function CertificatesSection() {
               <div style={{ flexGrow: 1 }}></div>
               <Group wrap="nowrap" justify="space-between" mt="sm">
                 <Group gap="xs" wrap="nowrap">
-                  <Avatar size={24} src={cert.logo} alt={cert.issuer} />
+                  <Avatar
+                    size={24}
+                    src={cert.logo}
+                    alt={`${cert.issuer} logo`}
+                    role="img"
+                  />
                   <Text size="sm">{cert.issuer}</Text>
                 </Group>
                 <Group gap="xs">
@@ -115,6 +120,7 @@ export default function CertificatesSection() {
                     target="_blank"
                     size="sm"
                     fw={500}
+                    aria-label={`View ${cert.title} credential from ${cert.issuer}`}
                     // underline="always"
                   >
                     Show credential
@@ -125,6 +131,7 @@ export default function CertificatesSection() {
                     size="sm"
                     fw={500}
                     // underline="always"
+                    aria-label={`Download ${cert.title} certificate PDF`}
                   >
                     View PDF
                   </Anchor>

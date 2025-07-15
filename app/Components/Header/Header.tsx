@@ -28,12 +28,12 @@ export default function Header({ opened, toggle }: HeaderProps) {
       )}
     >
       <Group h="100%" px="md">
-        <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" aria-label="Toggle navigation" />
         <Group justify="space-between" style={{ flex: 1 }}>
           {/* <UnstyledButton display="flex" component={Link} href="/">
             <MantineLogo size={30} />
           </UnstyledButton> */}
-          <UnstyledButton display="flex" component={Link} href="/" visibleFrom="sm">
+          <UnstyledButton display="flex" component={Link} href="/" visibleFrom="sm" aria-label="Home">
             <AYMANE_LOGO size={25} />
           </UnstyledButton>
           <UnstyledButton hiddenFrom="sm" display="flex" component={Link} href="/">
