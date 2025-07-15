@@ -39,7 +39,10 @@ export default function SkillsSection() {
                     {skill.level}%
                   </Text>
                 </Group>
-                <Progress value={skill.level} />
+                <Progress
+                  value={skill.level}
+                  aria-label={`${skill.name} skill level`}
+                />
               </Paper>
             ))}
           </GridCol>
