@@ -75,11 +75,11 @@ export const metadata = {
 };
 const myFont = localFont({
   src: [
-    {
-      path: "./fonts/made_mariage_regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
+    // {
+    //   path: "./fonts/made_mariage_regular.woff2",
+    //   weight: "400",
+    //   style: "normal",
+    // },
     {
       path: "./fonts/made_mariage_medium.woff2",
       weight: "500",
