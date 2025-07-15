@@ -1,10 +1,4 @@
-import {
-  AppShell,
-  Burger,
-  Button,
-  Group,
-  UnstyledButton,
-} from "@mantine/core";
+import { AppShell, Burger, Button, Group, UnstyledButton } from "@mantine/core";
 import Link from "next/link";
 import classes from "./Header.module.css";
 import IconArrowRight from "@tabler/icons-react/dist/esm/icons/IconArrowRight";
@@ -28,15 +22,33 @@ export default function Header({ opened, toggle }: HeaderProps) {
       )}
     >
       <Group h="100%" px="md">
-        <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="sm" aria-label="Toggle navigation" />
+        <Burger
+          opened={opened}
+          onClick={toggle}
+          hiddenFrom="md"
+          size="sm"
+          aria-label="Toggle navigation"
+        />
         <Group justify="space-between" style={{ flex: 1 }}>
           {/* <UnstyledButton display="flex" component={Link} href="/">
             <MantineLogo size={30} />
           </UnstyledButton> */}
-          <UnstyledButton display="flex" component={Link} href="/" visibleFrom="sm" aria-label="Home">
+          <UnstyledButton
+            display="flex"
+            component={Link}
+            href="/"
+            visibleFrom="sm"
+            aria-label="Home"
+          >
             <AYMANE_LOGO size={25} />
           </UnstyledButton>
-          <UnstyledButton hiddenFrom="sm" display="flex" component={Link} href="/">
+          <UnstyledButton
+            hiddenFrom="sm"
+            display="flex"
+            component={Link}
+            href="/"
+            aria-label="Home"
+          >
             <AYMANE_LOGO_MOBILE size={30} />
           </UnstyledButton>
           <Group
