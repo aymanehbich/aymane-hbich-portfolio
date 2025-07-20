@@ -59,7 +59,7 @@ const projects = [
 ];
 export default function ProjectsSection() {
   return (
-    <Container id="projects" fluid pb="xl" pt={80}>
+    <Container id="projects" fluid pb="xl" pt={80} px={0}>
       <Paper maw={700} mx="auto" mb="xl">
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Projects
