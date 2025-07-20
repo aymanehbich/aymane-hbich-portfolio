@@ -18,7 +18,7 @@ export default function AboutSection() {
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           About me
         </Title>
-        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="md" fw={500}>
           A brief look into my journey as a developer and tech enthusiast.
         </Text>
       </Paper>

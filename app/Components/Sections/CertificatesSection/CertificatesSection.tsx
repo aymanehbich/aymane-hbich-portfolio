@@ -68,7 +68,7 @@ export default function CertificatesSection() {
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Certificates And Achievements
         </Title>
-        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="md" fw={500}>
           A collection of my professional certifications and notable
           achievements that reflect my commitment to continuous learning and
           excellence in software development.

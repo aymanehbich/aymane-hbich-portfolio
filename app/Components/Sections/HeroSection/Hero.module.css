@@ -3,7 +3,7 @@
   font-family: var(--font-my) !important;
   font-weight: 800;
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -22,7 +22,7 @@
   font-weight: 500 !important;
   font-size: var(--mantine-font-size-lg) !important;
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 14px !important;
+    font-size: 17px !important;
     /* font-weight: 400 !important; */
   }
 }

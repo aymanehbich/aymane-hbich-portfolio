@@ -64,7 +64,7 @@ export default function ProjectsSection() {
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Projects
         </Title>
-        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="md" fw={500}>
           Here are all of my projects that I have worked on, showcasing my
           skills and expertise in web development.
         </Text>

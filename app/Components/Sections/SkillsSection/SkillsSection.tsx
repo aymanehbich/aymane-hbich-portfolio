@@ -18,7 +18,7 @@ export default function SkillsSection() {
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Skills & Expertise
         </Title>
-        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="md" fw={500}>
           A wide set of technical and soft skills acquired through academic
           training, internships, and self-learning.
         </Text>

@@ -74,7 +74,7 @@ export default function ContactSection() {
         <Title ff="var(--font-my)" ta="center" order={2} fw={900} size="h1">
           Contact Me
         </Title>
-        <Text ff="var(--font-my)" ta="center" c="gray.7" size="lg" fw={500}>
+        <Text ff="var(--font-my)" ta="center" c="gray.7" size="md" fw={500}>
           Interested in collaborating or have a question? Feel free to reach
           out! I&apos;m always open to discussing new projects, creative ideas,
           or opportunities to be part of your vision.
