@@ -46,8 +46,9 @@ export default function HeroSection() {
         modern web applications using JavaScript, React, Node.js and other
         cutting-edge technologies.
       </Text>
-      <Group mt="lg" justify="center" gap="xl">
+      <Group mt="lg" justify="center" wrap="nowrap">
         <Button
+          className={classes.ConnectButton}
           variant="default"
           radius="xl"
           rightSection={<IconArrowUpRight size={22} />}
@@ -57,6 +58,7 @@ export default function HeroSection() {
           Let&apos;s Connect
         </Button>
         <Button
+          className={classes.DownloadButton}
           variant="outline"
           radius="xl"
           rightSection={<IconDownload size={22} />}

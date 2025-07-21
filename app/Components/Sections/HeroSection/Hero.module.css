@@ -26,3 +26,18 @@
     /* font-weight: 400 !important; */
   }
 }
+
+.ConnectButton {
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: var(--mantine-font-size-md) !important;
+    height: var(--button-height-md) !important;
+    padding-inline: calc(var(--button-padding-x-md) / 1.5) !important;
+  }
+}
+.DownloadButton {
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: var(--mantine-font-size-md) !important;
+    height: var(--button-height-md) !important;
+    padding-inline: calc(var(--button-padding-x-md) / 1.5) !important;
+  }
+}

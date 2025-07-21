@@ -18,7 +18,8 @@ export const theme = createTheme({
     myColor,
   },
   primaryColor: "myColor",
-  fontFamily: "var(--font-sans)",
+  // fontFamily: "var(--font-sans)",
+  fontFamily: "var(--font-my)",
   headings: {
     fontFamily: "var(--font-my)",
   },

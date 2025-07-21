@@ -23,8 +23,8 @@ export default function AboutSection() {
         </Text>
       </Paper>
       <Grid mt="xl" align="flex-start" justify="space-between">
-        <GridCol span={{ base: 12, md: 6, lg: 6 }}>
-          <Text size="lg" c="gray.9">
+        <GridCol span={{ base: 12, md: 6, lg: 6 }} ff="var(--font-my)">
+          <Text size="lg" c="gray.9" >
             I am a full stack developer from Morocco with experience in building
             modern web applications using JavaScript, React, Node.js and other
             cutting-edge technologies. I have a passion for creating efficient,

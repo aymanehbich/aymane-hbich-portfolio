@@ -97,7 +97,7 @@ export default function ContactSection() {
           </GridCol>
         ))}
       </Grid>
-      <Text ta="center" c="gray.7" mt="xl">
+      <Text ta="center" c="gray.7" mt="xl" ff="var(--font-my)">
         Or fill out the form below to send me a message directly.
       </Text>
       <form onSubmit={form.onSubmit(handleSubmit)}>
