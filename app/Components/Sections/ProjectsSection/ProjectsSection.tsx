@@ -56,6 +56,27 @@ const projects = [
     demoLink: "https://quicklink-aymane.vercel.app/",
     githubLink: "https://github.com/aymanehbich/QuickLink",
   },
+  {
+    title: "Summify – AI-Powered Article and Text Summarization",
+    category: "Web Application",
+    summary:
+      "Summarize long articles or text instantly with GPT-4o-powered AI summaries.",
+    image: "/p3.png", // replace with the actual image path
+    description:
+      "Summify is a modern, responsive summarization tool built with React, TypeScript, and Mantine UI. It allows users to summarize content via URLs or direct input, generating structured markdown output with bullet points, quotes, and key takeaways using GPT-4o. Features include copy-to-clipboard, real-time UX feedback, and optimized lazy-loading performance. The app integrates Flask and Azure AI for seamless article parsing and summarization.",
+    technologies: [
+      "React 19",
+      "TypeScript",
+      "Mantine UI v7",
+      "Redux Toolkit",
+      "RTK Query",
+      "React Markdown",
+      "Flask API",
+      "Extractus",
+    ],
+    demoLink: "https://summify-by-hbich-aymane.vercel.app/", // replace with actual demo URL
+    githubLink: "https://github.com/aymanehbich/summify", // replace with actual GitHub URL
+  },
 ];
 export default function ProjectsSection() {
   return (
@@ -79,7 +100,7 @@ export default function ProjectsSection() {
                   <Image
                     src={project.image}
                     width={400}
-                    height={200}
+                    height={100}
                     alt={`${project.title} preview`}
                     quality={64}
                     className={classes.projectImage}
