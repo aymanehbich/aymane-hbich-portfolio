@@ -63,8 +63,10 @@ export default function HeroSection() {
           radius="xl"
           rightSection={<IconDownload size={22} />}
           size="lg"
+          component="a"
+          href="/cv/AYMANE-HBICH-CV-EN.pdf"
         >
-          Download CV
+          Download My CV
         </Button>
       </Group>
     </Container>
