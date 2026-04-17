@@ -25,6 +25,7 @@ export const skillsData = [
       { name: "VS Code", level: 90 },
       { name: "Postman", level: 75 },
       { name: "Figma", level: 60 },
+      { name: "WordPress", level: 80 },
     ],
   },
 ];
@@ -36,9 +37,9 @@ export const skillsStats = [
   {
     value: "5+",
     label: "Completed Projects",
-  },
+  },  
   {
-    value: "4",
+    value: "5 ",
     label: "Technologies Mastered",
   },
   {

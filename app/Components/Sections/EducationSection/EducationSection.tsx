@@ -12,6 +12,20 @@ import { IconSchool } from "@tabler/icons-react";
 import React from "react";
 const studies = [
   {
+    degree: "Master’s Degree – Ingénierie des Systèmes d’Information (ISI)",
+    school: "Faculté des Sciences Semlalia – Marrakech, Morocco",
+    period: "Sep 2024 – Present",
+    description:
+      "Currently pursuing a Master’s degree in Information Systems Engineering (1st year). The program covers advanced topics in software architecture, data engineering, distributed systems, and enterprise information systems.",
+    subjects: [
+      "Information Systems",
+      "Software Architecture",
+      "Distributed Systems",
+      "Data Engineering",
+      "Enterprise Modeling",
+    ],
+  },
+  {
     degree: "Bachelor’s Degree in Software Engineering",
     school: "Higher School of Technology – EST Fès, Morocco",
     period: "Sep 2021 – Jun 2024",
