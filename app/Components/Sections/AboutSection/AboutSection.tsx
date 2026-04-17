@@ -9,6 +9,7 @@ import {
 } from "@mantine/core";
 import React from "react";
 import ProfilePic from "../../../../public/HBICH_AYMANE.png";
+import ProfilePic2 from "../../../../public/HBICH_AYMANE_2.jpeg";
 import Image from "next/image";
 import classes from "./AboutSection.module.css";
 export default function AboutSection() {
@@ -50,7 +51,7 @@ export default function AboutSection() {
         </GridCol>
         <GridCol span={{ base: 12, md: 6, lg: 6 }}>
           <Image
-            src={ProfilePic}
+            src={ProfilePic2}
             width={500}
             height={500}
             style={{ objectFit: "cover" }}
